@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Ingrese los datos del formulario</h1>
+    </header>
+    <main class="form-container">
+
+        <form action="" method="get" enctype="multipart/form-data" class="form">
+            <div class="form__group">
+                <label for="documento" class="form__label">Documento</label><br>
+                <input class="form__input" type="number" name="documento" id="documento" required>
+            </div>
+
+            <div class="form__group">
+                <label for="nombre" class="form__label">Nombres</label><br>
+                <input class="form__input" type="text" name="nombre" id="nombre">
+            </div>
+
+            <div class="form__group">
+                <label for="apellido" class="form__label">Apellidos</label><br>
+                <input class="form__input" type="text" name="apellido" id="apellido">
+            </div>
+
+            <div class="form__group">
+                <label for="telefono" class="form__label">Teléfono</label><br>
+                <input class="form__input" type="number" name="telefono" id="telefono">
+            </div>
+
+            <div class="form__group">
+                <label class="form__label">Género:</label><br>
+                <label for="masculino" class="form__label form__label--inline">Masculino</label>
+                <input type="radio" name="sexo" id="masculino" value="m" class="form__radio">
+                <label for="femenino" class="form__label form__label--inline">Femenino</label>
+                <input type="radio" name="sexo" id="femenino" value="f" class="form__radio">
+            </div>
+
+            <div class="form__group">
+                <label for="Mensaje" class="form__label">Mensaje</label><br>
+                <textarea class="form__textarea" name="Mensaje" id="Mensaje" rows="6" placeholder="Envíame un mensaje"></textarea>
+            </div>
+
+            <div class="form__group">
+                <button class="form__button" type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

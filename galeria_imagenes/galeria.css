@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Mifuente";
+    src: url(fuentes/Saiyan-Sans.ttf); /* Ruta al archivo de fuente */
+}
+.cards__img {
+    width: 100px; /* Ancho fijo de la imagen */
+    height: 150px; /* Alto fijo de la imagen */
+    object-fit: contain; /* Hace que la imagen se ajuste completamente dentro del contenedor, manteniendo su relación de aspecto */
+}
+header h1 {
+    font-family: "Mifuente", sans-serif;
+    font-size: 50px; /* Tamaño grande */
+    color: black;
+    background-color: rgba(245, 245, 220, 0.897); /* Fondo claro para resaltar */
+}
+
+/* 
+    ESTILOS GENERALES DEL CUERPO DEL DOCUMENTO
+    Se usa una imagen como fondo, con cobertura total y posición centrada.
+*/
+body {
+    font-family: sans-serif; /* Fuente predeterminada sin serifas */
+    background-color: rgba(255, 153, 0, 0.884);
+    text-align: center; /* Centrado del texto */
+    background-size: cover; /* Cubre todo el fondo */
+    background-attachment: fixed; /* Fondo fijo, no se desplaza con el scroll */
+    background-position: center; /* Centrado horizontal y vertical */
+}
+
+/* 
+    GALERÍA DE IMÁGENES
+    Contenedor principal de la galería con un color de fondo semitransparente.
+*/
+.content-cards{
+    max-width: 900px; /* Ancho máximo */
+    height: 100%;
+    margin: 0 auto; /* Centrado horizontal */
+    background-color: rgba(255, 217, 0, 0.397); /* Amarillo con transparencia (rgba) */
+}
+
+/* 
+    ESTILOS PARA CADA ELEMENTO TIPO "TARJETA"
+    Se usan divs como tarjetas para imágenes o texto.
+*/
+.cards {
+    height: 200px;
+    display: inline-block; /* Hace que se comporten como elementos en línea pero con propiedades de bloque */
+    width: 190px;
+    margin: 10px; /* Espacio entre tarjetas */
+    vertical-align: top;
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* 
+    ESTILO OPCIONAL PARA DIVS CON CLASE "item"
+    Fondo negro semitransparente (con opacidad).
+*/
+.cards {
+    background: #00000050; /* Negro con 30% de opacidad (hex + alfa) */
+}
+
+/* 
+    TEXTO DENTRO DE CADA TARJETA
+    Se aplica cursiva, margen y negrita al texto de los divs.
+*/
+.cards__p {
+    font-style: italic; /* Texto inclinado */
+    margin-top: 8px; /* Separación superior del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 18px;
+}

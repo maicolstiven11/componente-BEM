@@ -1,0 +1,42 @@
+/* Bloque: menu */
+.menu {
+    /* Estilos generales del header si los hubiera, por ejemplo, un display flex o un padding global */
+}
+
+/* Elemento: menu__nav */
+.menu__nav {
+    max-width: 100%;
+}
+
+/* Elemento: menu__nav-list */
+.menu__nav-list {
+    list-style: none;
+    background-color: #222;
+    padding: 1em 0;
+    text-align: center;
+    margin: 0; /* Es buena práctica resetear el margin predeterminado de las listas */
+}
+
+/* Elemento: menu__nav-item */
+.menu__nav-item {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Elemento: menu__nav-link */
+.menu__nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px; /* Puedes ajustar este margen según necesites espaciar los enlaces */
+    font-size: 1rem;
+    transition: 0.2s;
+    /* Para el último elemento, a menudo se quita el margin-right si no quieres espacio al final */
+}
+
+/* Modificador de estado: menu__nav-link--hover */
+.menu__nav-link:hover {
+    color: orange;
+    text-decoration: underline;
+    font-size: 18px; /* Un ligero aumento para efecto hover */
+}
