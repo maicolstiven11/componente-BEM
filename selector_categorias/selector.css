@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.category-selector {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.category-selector__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.category-selector__list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-selector__item {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.category-selector__link {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.category-selector__link:hover {
+  background-color: #0056b3;
+}
+
+/* Oculta el contenido por defecto */
+.category-selector__content {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+/* Muestra solo el contenido de la categoría seleccionada */
+.category-selector__content:target {
+  display: block;
+}
+
+.category-selector__subtitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.category-selector__text {
+  font-size: 14px;
+}

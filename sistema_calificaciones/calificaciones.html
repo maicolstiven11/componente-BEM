@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Calificación</title>
+  <link rel="stylesheet" href="calificaciones.css">
+</head>
+<body>
+
+    <div class="grade-form">
+    <h2 class="grade-form__title">Califica tu asignatura</h2>
+
+    <form class="grade-form__form">
+        <label class="grade-form__label" for="subject">Asignatura:</label>
+        <input type="text" id="subject" name="subject" class="grade-form__input" placeholder="Ej. Matemáticas">
+
+        <label class="grade-form__label" for="score">Nota (1 a 5):</label>
+        <select id="score" name="score" class="grade-form__select">
+            <option class="grade-form__option" value="">Seleccione una nota</option>
+            <option class="grade-form__option" value="1">1 - Muy deficiente</option>
+            <option class="grade-form__option" value="2">2 - Deficiente</option>
+            <option class="grade-form__option" value="3">3 - Aceptable</option>
+            <option class="grade-form__option" value="4">4 - Bueno</option>
+            <option class="grade-form__option" value="5">5 - Excelente</option>
+        </select>
+
+        <label class="grade-form__label" for="comment">Comentarios:</label>
+        <textarea id="comment" name="comment" class="grade-form__textarea" rows="4" placeholder="Escribe tu opinión..."></textarea>
+
+        <button type="submit" class="grade-form__button">Enviar Calificación</button>
+    </form>
+    </div>
+
+</body>
+</html>

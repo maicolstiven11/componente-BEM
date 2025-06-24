@@ -1,0 +1,56 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 20px;
+}
+
+/* Tabs BEM */
+.tabs {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.tabs__menu {
+  background-color: #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.tabs__link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  background-color: #bbb;
+  color: white;
+  font-weight: bold;
+}
+
+.tabs__link:hover {
+  background-color: #999;
+}
+
+/* Oculta todo el contenido por defecto */
+.tabs__content {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Muestra el contenido si es el destino del hash (#tab1, #tab2, etc.) */
+.tabs__content:target {
+  display: block;
+}
+
+/* Títulos y textos */
+.tabs__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tabs__text {
+  font-size: 16px;
+}

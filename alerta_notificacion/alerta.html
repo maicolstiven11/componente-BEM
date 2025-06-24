@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Componente de Alerta</title>
+    <link rel="stylesheet" href="alerta.css">
 </head>
 <body>
-    
+    <h1>Ejemplos de Alertas</h1>
+
+    <!-- Alerta de éxito -->
+    <div class="alert alert--success">
+        <div class="alert__icon">✓</div>
+        <div class="alert__content">
+            <div class="alert__title">Éxito</div>
+            <p class="alert__message">Los datos se guardaron correctamente.</p>
+        </div>
+    </div>
+
+    <!-- Alerta de error -->
+    <div class="alert alert--error">
+        <div class="alert__icon">!</div>
+        <div class="alert__content">
+            <div class="alert__title">Error</div>
+            <p class="alert__message">No se pudo completar la operación.</p>
+        </div>
+    </div>
+
+    <!-- Alerta de advertencia -->
+    <div class="alert alert--warning">
+        <div class="alert__icon">⚠</div>
+        <div class="alert__content">
+            <div class="alert__title">Advertencia</div>
+            <p class="alert__message">Complete todos los campos requeridos.</p>
+        </div>
+    </div>
+
+    <!-- Alerta informativa -->
+    <div class="alert alert--info">
+        <div class="alert__icon">i</div>
+        <div class="alert__content">
+            <div class="alert__title">Información</div>
+            <p class="alert__message">Nuevas funciones disponibles.</p>
+        </div>
+    </div>
 </body>
 </html>

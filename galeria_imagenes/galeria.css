@@ -39,7 +39,7 @@ body {
 }
 
 /* 
-    ESTILOS PARA CADA ELEMENTO TIPO "TARJETA"
+    ESTILOS PARA CADA ELEMENTO TIPO "cards"
     Se usan divs como tarjetas para imágenes o texto.
 */
 .cards {
@@ -52,10 +52,7 @@ body {
     border-radius: 10px; /* Bordes redondeados */
 }
 
-/* 
-    ESTILO OPCIONAL PARA DIVS CON CLASE "item"
-    Fondo negro semitransparente (con opacidad).
-*/
+
 .cards {
     background: #00000050; /* Negro con 30% de opacidad (hex + alfa) */
 }
