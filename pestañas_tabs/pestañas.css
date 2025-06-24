@@ -1,56 +1,56 @@
 /* General */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  margin: 20px;
+body {                                                  /* Estilo base del body */
+  font-family: Arial, sans-serif;                      /* Fuente legible sin serifas */
+  background-color: #f8f8f8;                           /* Color de fondo claro */
+  margin: 20px;                                        /* Margen alrededor del contenido */
 }
 
 /* Tabs BEM */
-.tabs {
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  background-color: white;
+.tabs {                                                 /* Contenedor principal de las pestañas */
+  max-width: 600px;                                    /* Ancho máximo del componente */
+  margin: 0 auto;                                      /* Centrado horizontal */
+  border: 1px solid #ccc;                              /* Borde gris claro */
+  background-color: white;                             /* Fondo blanco para el contenedor */
 }
 
-.tabs__menu {
-  background-color: #ddd;
-  text-align: center;
-  padding: 10px 0;
+.tabs__menu {                                           /* Menú superior que contiene los enlaces */
+  background-color: #ddd;                              /* Fondo gris claro del menú */
+  text-align: center;                                  /* Centra los enlaces horizontalmente */
+  padding: 10px 0;                                     /* Espaciado vertical dentro del menú */
 }
 
-.tabs__link {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 0 5px;
-  text-decoration: none;
-  background-color: #bbb;
-  color: white;
-  font-weight: bold;
+.tabs__link {                                           /* Enlace de cada pestaña */
+  display: inline-block;                               /* Muestra en línea con propiedades de bloque */
+  padding: 10px 20px;                                  /* Espaciado interno del enlace */
+  margin: 0 5px;                                       /* Separación entre enlaces */
+  text-decoration: none;                               /* Quita el subrayado predeterminado */
+  background-color: #bbb;                              /* Color de fondo gris medio */
+  color: white;                                        /* Texto blanco */
+  font-weight: bold;                                   /* Texto en negrita */
 }
 
-.tabs__link:hover {
-  background-color: #999;
+.tabs__link:hover {                                     /* Efecto al pasar el cursor sobre el enlace */
+  background-color: #999;                              /* Fondo más oscuro en hover */
 }
 
 /* Oculta todo el contenido por defecto */
-.tabs__content {
-  display: none;
-  padding: 20px;
-  border-top: 1px solid #ccc;
+.tabs__content {                                        /* Sección de contenido de cada pestaña */
+  display: none;                                       /* No se muestra inicialmente */
+  padding: 20px;                                       /* Espacio interno */
+  border-top: 1px solid #ccc;                          /* Línea divisoria superior */
 }
 
 /* Muestra el contenido si es el destino del hash (#tab1, #tab2, etc.) */
-.tabs__content:target {
-  display: block;
+.tabs__content:target {                                 /* Cuando se selecciona por ancla en URL */
+  display: block;                                      /* Se muestra el contenido activo */
 }
 
 /* Títulos y textos */
-.tabs__title {
-  font-size: 20px;
-  margin-bottom: 10px;
+.tabs__title {                                          /* Título dentro del contenido de la pestaña */
+  font-size: 20px;                                     /* Tamaño grande del texto */
+  margin-bottom: 10px;                                 /* Espacio debajo del título */
 }
 
-.tabs__text {
-  font-size: 16px;
+.tabs__text {                                           /* Párrafo o descripción dentro de la pestaña */
+  font-size: 16px;                                     /* Tamaño medio del texto */
 }

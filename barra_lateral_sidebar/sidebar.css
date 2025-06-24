@@ -1,53 +1,53 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+body {                                                    /* Estilo global del cuerpo de la página */
+  font-family: Arial, sans-serif;                        /* Fuente básica sin serifas */
+  background-color: #f4f4f4;                             /* Fondo gris claro */
+  margin: 0;                                             /* Elimina margen exterior */
+  padding: 0;                                            /* Elimina relleno exterior */
 }
 
 /* Sidebar bloque principal */
-.sidebar {
-  width: 200px;
-  height: 100%;
-  background-color: #2c3e50;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
+.sidebar {                                                /* Contenedor lateral (sidebar) */
+  width: 200px;                                          /* Ancho fijo */
+  height: 100%;                                          /* Altura total de la ventana */
+  background-color: #2c3e50;                             /* Color de fondo azul oscuro */
+  color: white;                                          /* Texto blanco */
+  position: absolute;                                    /* Posición absoluta desde la esquina */
+  top: 0;                                                /* Desde arriba */
+  left: 0;                                               /* Alineado a la izquierda */
+  padding: 20px;                                         /* Espaciado interno */
 }
 
-.sidebar__title {
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-align: center;
+.sidebar__title {                                         /* Título del sidebar */
+  font-size: 18px;                                       /* Tamaño del texto */
+  margin-bottom: 15px;                                   /* Espacio inferior */
+  text-align: center;                                    /* Centrado horizontal */
 }
 
-.sidebar__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.sidebar__list {                                          /* Lista de navegación dentro del sidebar */
+  list-style: none;                                      /* Quita los puntos de lista */
+  padding: 0;                                            /* Sin relleno */
+  margin: 0;                                             /* Sin margen */
 }
 
-.sidebar__item {
-  margin-bottom: 10px;
+.sidebar__item {                                          /* Elemento individual de la lista */
+  margin-bottom: 10px;                                   /* Espacio inferior entre ítems */
 }
 
-.sidebar__link {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 8px;
-  background-color: #34495e;
-  border-radius: 4px;
+.sidebar__link {                                          /* Enlace de navegación dentro del sidebar */
+  text-decoration: none;                                 /* Quita el subrayado */
+  color: white;                                          /* Texto blanco */
+  display: block;                                        /* Ocupa toda la línea como bloque */
+  padding: 8px;                                          /* Espaciado interno */
+  background-color: #34495e;                             /* Color de fondo para cada enlace */
+  border-radius: 4px;                                    /* Bordes redondeados */
 }
 
-.sidebar__link:hover {
-  background-color: #1abc9c;
+.sidebar__link:hover {                                    /* Efecto al pasar el mouse por un enlace */
+  background-color: #1abc9c;                             /* Fondo turquesa al hacer hover */
 }
 
 /* Contenido principal */
-.sidebar__content {
-  margin-left: 220px;
-  padding: 20px;
+.sidebar__content {                                       /* Contenido que se muestra al lado del sidebar */
+  margin-left: 220px;                                    /* Desplazado a la derecha para no superponerse */
+  padding: 20px;                                         /* Espaciado interno */
 }

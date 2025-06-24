@@ -1,60 +1,68 @@
-*{
-    text-align: center;
-    
+* {                                      /* Selector universal */
+    text-align: center;                 /* Centra el texto de todos los elementos */
 }
-:root{
-    --color-titulo:black;
-    --color-fondo__main: #cdf5e800;
-    --color-fondo__card: #abebdd;
-    --color-fondo__body: #d8fddc;
-    --color-texto: rgb(0, 0, 0);
-    --color-boton: #ffff;
-    --color-box-shadow: black;
 
+:root {                                 /* Variables CSS globales */
+    --color-titulo: black;              /* Color para títulos */
+    --color-fondo__main: #cdf5e800;     /* Fondo transparente del contenedor principal */
+    --color-fondo__card: #abebdd;       /* Fondo de las tarjetas del producto */
+    --color-fondo__body: #d8fddc;       /* Fondo del body */
+    --color-texto: rgb(0, 0, 0);        /* Color principal del texto */
+    --color-boton: #ffff;               /* Color del botón */
+    --color-box-shadow: black;          /* Color de la sombra */
 }
-header h1{
-    color: var(--color-titulo);
-}
-body{
-    background-color: var(--color-fondo__body);
-}
-.product{
-    background-color:var(--color-fondo__main) ;
 
+header h1 {                             /* Estilo para el título dentro del encabezado */
+    color: var(--color-titulo);        /* Usa la variable de color del título */
 }
-.product-card{
-    margin: 0 auto;
-    background-color: var(--color-fondo__card);
-    width: 300px;
-    height: 320px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 20px var(--color-box-shadow);
-}
-.product-card__image{
-    margin-top: 20px;
-    width: 100px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px ;
-}
-.product-card__title, .product-card__description, .product-card__price{
-    color: var(--color-texto);
-    font-size: 16px;
-    font-family: Arial;
-}
-.product-card__price{
-    font-size: 18px;
-}
-.product-card__button:hover{
-    font-weight: bold;
 
+body {                                  /* Estilo general del body */
+    background-color: var(--color-fondo__body);  /* Color de fondo del body */
 }
-.product-card__button{
-    margin-top: 10px;
-    height: 30px;
-    border-radius: 100px;
-    border-color: bisque;
-    background-color: var(--color-boton);
-    font-size: 15px;
-    box-shadow: 5px 5px 5px var(--color-box-shadow);
+
+.product {                              /* Contenedor general de productos */
+    background-color: var(--color-fondo__main);  /* Fondo del área de productos */
+}
+
+.product-card {                         /* Tarjeta individual de producto */
+    margin: 0 auto;                     /* Centrado horizontal */
+    background-color: var(--color-fondo__card);  /* Fondo de la tarjeta */
+    width: 300px;                       /* Ancho fijo */
+    height: 320px;                      /* Alto fijo */
+    border-radius: 20px;               /* Bordes redondeados */
+    box-shadow: 3px 3px 20px var(--color-box-shadow);  /* Sombra con color personalizado */
+}
+
+.product-card__image {                  /* Imagen del producto */
+    margin-top: 20px;                  /* Separación superior */
+    width: 100px;                      /* Ancho fijo */
+    height: auto;                      /* Alto automático para mantener proporción */
+    object-fit: contain;              /* Ajuste sin recortar */
+    border-radius: 10px;              /* Bordes redondeados */
+}
+
+.product-card__title,
+.product-card__description,
+.product-card__price {                  /* Texto general del producto */
+    color: var(--color-texto);        /* Color del texto */
+    font-size: 16px;                  /* Tamaño del texto base */
+    font-family: Arial;               /* Fuente sin serifas */
+}
+
+.product-card__price {                  /* Precio del producto */
+    font-size: 18px;                  /* Tamaño más grande que el texto normal */
+}
+
+.product-card__button:hover {          /* Efecto al pasar el mouse sobre el botón */
+    font-weight: bold;               /* Negrita al hacer hover */
+}
+
+.product-card__button {                 /* Botón de la tarjeta */
+    margin-top: 10px;                 /* Separación superior */
+    height: 30px;                     /* Altura del botón */
+    border-radius: 100px;            /* Forma de pastilla */
+    border-color: bisque;            /* Color del borde */
+    background-color: var(--color-boton);  /* Fondo desde variable */
+    font-size: 15px;                 /* Tamaño del texto */
+    box-shadow: 5px 5px 5px var(--color-box-shadow);  /* Sombra suave */
 }

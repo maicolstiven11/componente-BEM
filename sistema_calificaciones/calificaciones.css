@@ -1,60 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
+body {                                              /* Estilos generales del cuerpo de la página */
+  font-family: Arial, sans-serif;                  /* Fuente sin serifas para mejor legibilidad */
+  background-color: #f0f0f0;                       /* Color de fondo gris claro */
+  padding: 20px;                                   /* Espaciado interior alrededor del contenido */
 }
 
-.grade-form {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
+.grade-form {                                       /* Bloque principal del formulario */
+  max-width: 500px;                                /* Ancho máximo del formulario */
+  margin: 0 auto;                                  /* Centrado horizontal en la página */
+  background-color: #fff;                          /* Fondo blanco del formulario */
+  padding: 20px;                                   /* Espacio interno del formulario */
+  border: 1px solid #ccc;                          /* Borde gris claro alrededor */
 }
 
-.grade-form__title {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 15px;
+.grade-form__title {                                /* Título principal del formulario */
+  text-align: center;                              /* Alineación centrada */
+  font-size: 20px;                                 /* Tamaño del texto del título */
+  margin-bottom: 15px;                             /* Espacio inferior */
 }
 
-.grade-form__form {
-  display: block;
+.grade-form__form {                                 /* Contenedor del formulario <form> */
+  display: block;                                  /* Comportamiento tipo bloque */
 }
 
-.grade-form__label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
+.grade-form__label {                                /* Etiquetas de campos (labels) */
+  display: block;                                  /* Ocupa el 100% del ancho */
+  margin-top: 10px;                                /* Espacio superior entre campos */
+  margin-bottom: 5px;                              /* Espacio entre la etiqueta y el campo */
+  font-weight: bold;                               /* Texto en negrita */
 }
 
 .grade-form__input,
 .grade-form__select,
-.grade-form__textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-size: 14px;
+.grade-form__textarea {                             /* Estilos compartidos entre inputs, selects y textarea */
+  width: 100%;                                     /* Ocupa todo el ancho disponible */
+  padding: 8px;                                    /* Espaciado interno */
+  border: 1px solid #aaa;                          /* Borde gris medio */
+  border-radius: 4px;                              /* Bordes redondeados */
+  font-size: 14px;                                 /* Tamaño de texto estándar */
 }
 
-.grade-form__textarea {
-  resize: vertical;
+.grade-form__textarea {                             /* Estilo específico para la caja de texto */
+  resize: vertical;                                /* Permite redimensionar solo en altura */
 }
 
-.grade-form__button {
-  margin-top: 15px;
-  padding: 10px 15px;
-  background-color: #28a745;
-  border: none;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 4px;
+.grade-form__button {                               /* Botón de envío del formulario */
+  margin-top: 15px;                                /* Separación superior */
+  padding: 10px 15px;                              /* Relleno interno (vertical y horizontal) */
+  background-color: #28a745;                       /* Color de fondo verde */
+  border: none;                                    /* Sin borde */
+  color: white;                                    /* Texto blanco */
+  font-size: 15px;                                 /* Tamaño del texto */
+  cursor: pointer;                                 /* Cambia el cursor al pasar por encima */
+  width: 100%;                                     /* Botón del ancho completo del formulario */
+  border-radius: 4px;                              /* Bordes redondeados */
 }
 
-.grade-form__button:hover {
-  background-color: #218838;
+.grade-form__button:hover {                         /* Efecto al pasar el mouse por el botón */
+  background-color: #218838;                       /* Color verde más oscuro al hacer hover */
 }

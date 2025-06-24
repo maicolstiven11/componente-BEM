@@ -1,85 +1,79 @@
 /* === Estilos Generales === */
-body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 2em;
+body {                                                  /* Estilo general del cuerpo de la página */
+    font-family: sans-serif;                           /* Fuente sin serifas */
+    background-color: #f4f4f4;                         /* Fondo gris claro */
+    text-align: center;                                /* Centra todo el texto */
+    padding: 2em;                                       /* Espaciado interior general */
 }
 
-
 /* Elemento Título del Encabezado */
-.header__title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1em;
+.header__title {                                        /* Título principal */
+    font-size: 2.5rem;                                 /* Tamaño grande de fuente */
+    color: #333;                                       /* Color gris oscuro */
+    margin-bottom: 1em;                                /* Espacio debajo del título */
 }
 
 /* Bloque Contenedor del Formulario */
-.form-container {
-    max-width: 50%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 2em;
-    border-radius: 1em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+.form-container {                                       /* Contenedor principal del formulario */
+    max-width: 50%;                                    /* Ocupa la mitad del ancho de la pantalla */
+    margin: 0 auto;                                    /* Centrado horizontal */
+    background-color: #ffffff;                         /* Fondo blanco */
+    padding: 2em;                                      /* Relleno interno */
+    border-radius: 1em;                                /* Bordes redondeados */
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);             /* Sombra suave alrededor */
 }
-
 
 /* Elemento Grupo del Formulario */
-.form__group {
-    margin-bottom: 1.5em;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif
-
+.form__group {                                          /* Agrupación de cada campo del formulario */
+    margin-bottom: 1.5em;                              /* Espacio inferior entre campos */
+    text-align: center;                                /* Texto centrado */
+    font-size: 20px;                                   /* Tamaño de letra más grande */
+    font-family: Arial, Helvetica, sans-serif          /* Fuente alternativa para más compatibilidad */
 }
 
-
-
 /* Modificador de Etiqueta del Formulario (para visualización en línea, por ejemplo, con botones de radio) */
-.form__label--inline {
-    display: inline-block; /* O cualquier propiedad que lo haga en línea */
-    margin-right: 0.5em; /* Espaciado de ejemplo */
+.form__label--inline {                                  /* Etiqueta alineada en línea */
+    display: inline-block;                             /* Se comporta como un bloque en línea */
+    margin-right: 0.5em;                               /* Espacio a la derecha */
 }
 
 /* Elemento Campo de Entrada del Formulario */
-.form__input {
-    font-size: 1rem;
-    padding: 0.5em;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 0.5em;
+.form__input {                                          /* Campos de texto tipo input */
+    font-size: 1rem;                                   /* Tamaño estándar de fuente */
+    padding: 0.5em;                                    /* Espaciado interno */
+    width: 100%;                                       /* Ocupa todo el ancho disponible */
+    border: 1px solid #ccc;                            /* Borde gris claro */
+    border-radius: 0.5em;                              /* Bordes redondeados */
 }
 
 /* Elemento Área de Texto del Formulario */
-.form__textarea {
-    margin-top: 20px;
-    font-size: 1rem;
-    width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 0.5em;
-    resize: vertical;
+.form__textarea {                                       /* Área de texto */
+    margin-top: 20px;                                  /* Espacio superior */
+    font-size: 1rem;                                   /* Tamaño estándar de fuente */
+    width: 400px;                                      /* Ancho fijo */
+    border: 1px solid #ccc;                            /* Borde gris claro */
+    border-radius: 0.5em;                              /* Bordes redondeados */
+    resize: vertical;                                  /* Solo permite redimensionar en altura */
 }
 
 /* Elemento Botón de Radio del Formulario (si se necesitan estilos específicos para los botones de radio) */
-.form__radio {
-    /* Estilos específicos para botones de radio */
-    margin-right: 1em; /* Espaciado de ejemplo */
+.form__radio {                                          /* Botón tipo radio */
+    margin-right: 1em;                                 /* Espacio entre botones */
 }
 
 /* Elemento Botón del Formulario */
-.form__button {
-    padding: 0.7em;
-    font-size: 1rem;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    width: 200px;
+.form__button {                                         /* Botón para enviar el formulario */
+    padding: 0.7em;                                    /* Espaciado interno */
+    font-size: 1rem;                                   /* Tamaño estándar de fuente */
+    background-color: #ff6600;                         /* Fondo naranja brillante */
+    color: white;                                      /* Texto blanco */
+    border: none;                                      /* Sin borde */
+    border-radius: 100px;                              /* Bordes completamente redondeados */
+    cursor: pointer;                                   /* Cursor tipo botón al pasar encima */
+    width: 200px;                                      /* Ancho fijo del botón */
 }
 
 /* Estado Hover del Botón del Formulario */
-.form__button:hover {
-    font-weight: bold;
+.form__button:hover {                                   /* Estilo al pasar el mouse sobre el botón */
+    font-weight: bold;                                 /* Texto en negrita */
 }

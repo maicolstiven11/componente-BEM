@@ -1,56 +1,55 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+body {                                               /* Estilo general del cuerpo del documento */
+  font-family: Arial, sans-serif;                   /* Fuente legible y sin serifas */
+  background-color: #f4f4f4;                        /* Color de fondo gris claro */
+  padding: 20px;                                    /* Espaciado interior en todo el body */
 }
 
-.blog-post {
-  background-color: #fff;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+.blog-post {                                         /* Contenedor principal del artículo */
+  background-color: #fff;                           /* Fondo blanco */
+  max-width: 700px;                                 /* Ancho máximo del post */
+  margin: 0 auto;                                   /* Centrado horizontal en la página */
+  padding: 20px;                                    /* Espaciado interno del contenido */
+  border: 1px solid #ccc;                           /* Borde gris claro */
 }
 
-.blog-post__title {
-  font-size: 24px;
-  margin-bottom: 10px;
+.blog-post__title {                                  /* Título del blog */
+  font-size: 24px;                                  /* Tamaño grande para el título */
+  margin-bottom: 10px;                              /* Espacio debajo del título */
 }
 
-.blog-post__meta {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 15px;
+.blog-post__meta {                                   /* Información del autor y fecha */
+  font-size: 13px;                                  /* Tamaño pequeño del texto */
+  color: #777;                                      /* Color gris claro */
+  margin-bottom: 15px;                              /* Espacio inferior respecto al siguiente bloque */
 }
 
-.blog-post__image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 4px;
-
+.blog-post__image {                                  /* Imagen del artículo */
+  width: 100%;                                      /* Ocupa todo el ancho del contenedor */
+  height: auto;                                     /* Altura automática para mantener proporción */
+  margin-bottom: 15px;                              /* Espacio debajo de la imagen */
+  border-radius: 4px;                               /* Bordes ligeramente redondeados */
 }
 
-.blog-post__content p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-  font-size: 15px;
+.blog-post__content p {                              /* Párrafos dentro del contenido */
+  line-height: 1.6;                                 /* Altura entre líneas para mejorar legibilidad */
+  margin-bottom: 10px;                              /* Espacio entre párrafos */
+  font-size: 15px;                                  /* Tamaño del texto */
 }
 
-.blog-post__read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
+.blog-post__read-more {                              /* Enlace de leer más */
+  display: inline-block;                            /* Comportamiento de bloque en línea */
+  margin-top: 10px;                                 /* Espacio superior respecto al texto anterior */
+  color: #007bff;                                   /* Color azul para el enlace */
+  text-decoration: none;                            /* Quita el subrayado por defecto */
+  font-weight: bold;                                /* Texto en negrita */
 }
 
-.blog-post__read-more:hover {
-  text-decoration: underline;
+.blog-post__read-more:hover {                        /* Estilo cuando se pasa el mouse sobre el enlace */
+  text-decoration: underline;                       /* Subraya el enlace al pasar el cursor */
 }
 
-.blog-post__image{
-    margin: 0 auto;
-    width: 30%;
-    margin-left: 210px ;
+.blog-post__image{                                   /* Segunda definición de la imagen (sobrescribe la anterior) */
+    margin: 0 auto;                                 /* Centra horizontalmente (si es posible) */
+    width: 30%;                                     /* Reduce el ancho al 30% del contenedor */
+    margin-left: 210px ;                            /* Desplaza manualmente la imagen hacia la derecha */
 }

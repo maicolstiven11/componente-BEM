@@ -1,61 +1,60 @@
 /* Bloque principal */
-.alert {
-    padding: 12px 16px;
-    margin: 10px 0;
-    border-radius: 4px;
-    border-left: 5px solid;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    align-items: center;
-    max-width: 600px;
+.alert {                                                  /* Contenedor principal de la alerta */
+    padding: 12px 16px;                                  /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    margin: 10px 0;                                      /* Separación vertical entre alertas */
+    border-radius: 4px;                                  /* Bordes redondeados */
+    border-left: 5px solid;                              /* Borde izquierdo visible (modificable por tipo) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    display: block;                                      /* Comportamiento de bloque */
+    align-items: center;                                 /* Alineación (no tiene efecto sin flexbox) */
+    max-width: 600px;                                    /* Ancho máximo de la alerta */
 }
 
 /* Elementos del bloque */
-.alert__icon {
-    display: inline;
-    margin-right: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    
+.alert__icon {                                            /* Ícono visual que acompaña la alerta */
+    display: inline;                                     /* Se mantiene en línea con el texto */
+    margin-right: 12px;                                  /* Separación del texto */
+    font-size: 20px;                                     /* Tamaño del ícono */
+    font-weight: bold;                                   /* Negrita para resaltar */
 }
 
-.alert__content {
-    margin-left: 30px;
-    margin-top: -30px;
+.alert__content {                                         /* Contenedor del texto (título y mensaje) */
+    margin-left: 30px;                                   /* Separación respecto al borde o ícono */
+    margin-top: -30px;                                   /* Desplazamiento vertical para alineación */
 }
 
-.alert__title {
-    font-weight: bold;
-    margin-bottom: 4px;
-    font-size: 16px;
+.alert__title {                                           /* Título destacado de la alerta */
+    font-weight: bold;                                   /* Texto en negrita */
+    margin-bottom: 4px;                                  /* Espacio inferior respecto al mensaje */
+    font-size: 16px;                                     /* Tamaño de fuente mayor que el mensaje */
 }
 
-.alert__message {
-    margin: 0;
-    font-size: 14px;
+.alert__message {                                         /* Texto descriptivo de la alerta */
+    margin: 0;                                           /* Sin márgenes adicionales */
+    font-size: 14px;                                     /* Tamaño estándar de lectura */
 }
 
 /* Modificadores para tipos de alerta */
-.alert--success {
-    background-color: #e8f5e9;
-    border-left-color: #2e7d32;
-    color: #2e7d32;
+.alert--success {                                         /* Alerta de éxito */
+    background-color: #e8f5e9;                           /* Fondo verde claro */
+    border-left-color: #2e7d32;                          /* Borde izquierdo verde oscuro */
+    color: #2e7d32;                                      /* Texto verde oscuro */
 }
 
-.alert--error {
-    background-color: #ffebee;
-    border-left-color: #c62828;
-    color: #c62828;
+.alert--error {                                           /* Alerta de error */
+    background-color: #ffebee;                           /* Fondo rojo claro */
+    border-left-color: #c62828;                          /* Borde izquierdo rojo oscuro */
+    color: #c62828;                                      /* Texto rojo oscuro */
 }
 
-.alert--warning {
-    background-color: #fff8e1;
-    border-left-color: #f57f17;
-    color: #f57f17;
+.alert--warning {                                         /* Alerta de advertencia */
+    background-color: #fff8e1;                           /* Fondo amarillo claro */
+    border-left-color: #f57f17;                          /* Borde izquierdo naranja fuerte */
+    color: #f57f17;                                      /* Texto naranja fuerte */
 }
 
-.alert--info {
-    background-color: #e3f2fd;
-    border-left-color: #1565c0;
-    color: #1565c0;
+.alert--info {                                            /* Alerta informativa */
+    background-color: #e3f2fd;                           /* Fondo azul claro */
+    border-left-color: #1565c0;                          /* Borde izquierdo azul intenso */
+    color: #1565c0;                                      /* Texto azul intenso */
 }

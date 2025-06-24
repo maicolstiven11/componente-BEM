@@ -1,65 +1,65 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 20px;
+body {                                              /* Estilo general del cuerpo de la página */
+  font-family: Arial, sans-serif;                  /* Fuente legible sin serifas */
+  background-color: #f0f0f0;                       /* Color de fondo gris claro */
+  margin: 20px;                                    /* Margen alrededor del contenido */
 }
 
-.category-selector {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+.category-selector {                                /* Bloque principal del selector de categorías */
+  background-color: #fff;                          /* Fondo blanco del contenedor */
+  border: 1px solid #ccc;                          /* Borde gris claro */
+  padding: 20px;                                   /* Espaciado interno */
+  max-width: 600px;                                /* Ancho máximo */
+  margin: 0 auto;                                  /* Centrado horizontal */
 }
 
-.category-selector__title {
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-align: center;
+.category-selector__title {                         /* Título principal del componente */
+  font-size: 18px;                                 /* Tamaño del texto */
+  margin-bottom: 10px;                             /* Espacio debajo del título */
+  text-align: center;                              /* Centrado del texto */
 }
 
-.category-selector__list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  margin-bottom: 20px;
+.category-selector__list {                          /* Lista de categorías */
+  list-style: none;                                /* Elimina los puntos de lista */
+  padding: 0;                                      /* Sin padding */
+  text-align: center;                              /* Centra los elementos inline */
+  margin-bottom: 20px;                             /* Espacio debajo de la lista */
 }
 
-.category-selector__item {
-  display: inline-block;
-  margin: 0 8px;
+.category-selector__item {                          /* Cada ítem de la lista de categorías */
+  display: inline-block;                           /* Elemento en línea con ancho y alto */
+  margin: 0 8px;                                   /* Espacio horizontal entre botones */
 }
 
-.category-selector__link {
-  text-decoration: none;
-  background-color: #007bff;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 4px;
+.category-selector__link {                          /* Botón o enlace de categoría */
+  text-decoration: none;                           /* Elimina el subrayado */
+  background-color: #007bff;                       /* Fondo azul */
+  color: white;                                    /* Texto blanco */
+  padding: 8px 14px;                               /* Espacio interior */
+  border-radius: 4px;                              /* Bordes redondeados */
 }
 
-.category-selector__link:hover {
-  background-color: #0056b3;
+.category-selector__link:hover {                    /* Efecto al pasar el cursor sobre el enlace */
+  background-color: #0056b3;                       /* Azul más oscuro en hover */
 }
 
 /* Oculta el contenido por defecto */
-.category-selector__content {
-  display: none;
-  padding: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #fafafa;
+.category-selector__content {                       /* Contenedor del contenido de categoría */
+  display: none;                                   /* Oculta inicialmente */
+  padding: 10px;                                   /* Espaciado interno */
+  border-top: 1px solid #ccc;                      /* Línea superior divisoria */
+  background-color: #fafafa;                       /* Fondo gris muy claro */
 }
 
 /* Muestra solo el contenido de la categoría seleccionada */
-.category-selector__content:target {
-  display: block;
+.category-selector__content:target {                /* Activa el contenido con un ID en el hash */
+  display: block;                                  /* Muestra el contenido cuando se selecciona */
 }
 
-.category-selector__subtitle {
-  font-size: 16px;
-  margin-bottom: 5px;
+.category-selector__subtitle {                      /* Subtítulo dentro de cada categoría */
+  font-size: 16px;                                 /* Tamaño mediano del subtítulo */
+  margin-bottom: 5px;                              /* Espacio debajo del subtítulo */
 }
 
-.category-selector__text {
-  font-size: 14px;
+.category-selector__text {                          /* Párrafo de texto dentro de la categoría */
+  font-size: 14px;                                 /* Tamaño del texto regular */
 }
